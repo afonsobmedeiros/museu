@@ -45,7 +45,7 @@ def update(collection_id: int):
     if not result:
         response.status = 401
         return {"error": "Invalid data."}
-
+    response.status = 201
     return {
         "collection": {
             "id": result,

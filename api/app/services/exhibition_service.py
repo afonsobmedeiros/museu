@@ -1,3 +1,4 @@
+from config import logging
 from datetime import datetime
 from app.repositories import exhibition_repository as er
 
@@ -5,13 +6,16 @@ from app.repositories import exhibition_repository as er
 def create(
     curator_id: int, name: str, summary: str, start_at: str, finish_at: str
 ) -> int:
-    return er.create(
-        name,
-        summary,
-        datetime.fromisoformat(start_at),
-        datetime.fromisoformat(finish_at),
-        curator_id,
-    )
+    try:
+        return er.create(
+            name,
+            summary,
+            datetime.fromisoformat(start_at),
+            datetime.fromisoformat(finish_at),
+            curator_id,
+        )
+    except Exception as e:
+        logging.error(e.message)
 
 
 def update(
@@ -21,10 +25,13 @@ def update(
     start_at: datetime,
     finish_at: datetime,
 ):
-    return er.update(
-        exhibition_id,
-        name,
-        summary,
-        datetime.fromisoformat(start_at),
-        datetime.fromisoformat(finish_at),
-    )
+    try:
+        return er.update(
+            exhibition_id,
+            name,
+            summary,
+            datetime.fromisoformat(start_at),
+            datetime.fromisoformat(finish_at),
+        )
+    except Exception as e:
+        logging.error(e.message)
