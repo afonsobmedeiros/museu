@@ -1,0 +1,28 @@
+@import '../../index.css';
+
+#dashboard-page > h1,
+#dashboard-page > p {
+    color: var(--areia-envelhecida);
+}
+
+.link-nav {
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 5px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    color: var(--areia-envelhecida);
+    background-color: var(--preto-desbotado)
+}
+
+.link-nav:hover {
+    opacity: 70%;
+}
+
+#dashboard-page > div > div > div > a,
+#dashboard-page > div > div > div > a:visited {
+    text-decoration: none;
+    color: var(--areia-envelhecida);
+}

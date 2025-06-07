@@ -1,0 +1,36 @@
+@import '../../index.css';
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assets/images/Wallpaper_Museu_das_cores_001.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* ajusta aqui a opacidade */
+  }
+
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+#login-container {
+    padding: 20px;
+    border: 1px solid var(--areia-envelhecida);
+    border-radius: 5px;
+    color: var(--areia-envelhecida);
+    background-color: var(--preto-desbotado)
+}
+
+#actions > small > a {
+    color: var(--areia-envelhecida);
+}

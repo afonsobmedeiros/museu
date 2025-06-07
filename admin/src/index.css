@@ -1,0 +1,53 @@
+:root {
+  --areia-envelhecida: #EDE3D2;
+  --sepia-rosada: #C7A27C;
+  --verde-folha-seca: #9A9D66;
+  --azul-fosco: #4D6A8B;
+  --vermelho-vinil: #A24D4D;
+  --preto-desbotado: #2B2B2B;
+}
+
+.btn-vinil {
+  background-color: var(--vermelho-vinil);
+  color: white;
+  border: none;
+}
+
+.btn-vinil:hover {
+  background-color: #893b3b; /* tom mais escuro no hover */
+}
+
+.btn-sepia {
+  background-color: var(--sepia-rosada);
+  color: white;
+  border: none;
+}
+
+.btn-sepia:hover {
+  background-color: #a97d5e;
+}
+
+.btn-folha {
+  background-color: var(--verde-folha-seca);
+  color: white;
+  border: none;
+}
+
+.btn-folha:hover {
+  background-color: #7e8155;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
